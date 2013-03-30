@@ -1,11 +1,10 @@
 # -*- encoding: utf-8 -*-
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'skype_activerecord/version'
 
 Gem::Specification.new do |gem|
-  gem.name          = "skype_activerecord"
-  gem.version       = SkypeActiverecord::VERSION
+  gem.name          = "skype_db"
+  gem.version       = SkypeDB::VERSION
   gem.authors       = ["Bouke van der Bijl"]
   gem.email         = ["boukevanderbijl@gmail.com"]
   gem.description   = %q{TODO: Write a gem description}
