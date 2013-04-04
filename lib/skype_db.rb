@@ -25,6 +25,8 @@ module SkypeDB
   end
 end
 
+SkypeDB.connect
+
 Dir[File.join(File.dirname(File.absolute_path(__FILE__)), "skype_db", "models", "*.rb")].each do |f|
   require f
 end
