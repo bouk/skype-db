@@ -3,7 +3,7 @@ module SkypeDB
     self.table_name = 'Messages'
     self.inheritance_column = 'object_type'
 
-    belongs_to :contact, primary_key: :skypename, foreign_key: :author
+    belongs_to :contact, foreign_key: :author
 
     def body
       '' if body_xml.empty?
