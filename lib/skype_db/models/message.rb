@@ -4,5 +4,10 @@ module SkypeDB
     self.inheritance_column = 'object_type'
 
     belongs_to :contact, primary_key: :skypename, foreign_key: :author
+
+    def body
+      '' if body_xml.empty?
+      body_xml.gsub(/<.*?>/, '')
+    end
   end
 end
