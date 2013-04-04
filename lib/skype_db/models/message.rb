@@ -9,5 +9,9 @@ module SkypeDB
       '' if body_xml.empty?
       body_xml.gsub(/<.*?>/, '')
     end
+
+    def body?
+      body_xml?
+    end
   end
 end
